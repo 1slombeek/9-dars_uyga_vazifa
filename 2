@@ -1,0 +1,21 @@
+class Odam:
+    def __init__(self, ism):
+        self.ism = ism
+
+    def kuylash(self):
+        print(f"{self.ism} kuylamoqda...")
+
+    def eshitish(self, boshqa_odam):
+        print(f"{self.ism} {boshqa_odam.ism}ning kuylashini eshityapti...")
+
+    def gapirish(self, javob):
+        print(f"{self.ism} aytmoqda: {javob}")
+
+odam1 = Odam("Azamjon")
+odam2 = Odam("Sarvar")
+
+odam1.kuylash()
+
+odam2.eshitish(odam1)
+
+odam2.gapirish("Ajoyib kuylading!")
